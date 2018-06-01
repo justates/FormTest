@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TestFunc;
-
+using DBtest;
 
 namespace WindowsFormsApplication1
 {
@@ -88,6 +88,12 @@ namespace WindowsFormsApplication1
                 }
                 HEXResult.Text = ConvertChar.GBK2HEX(strgbk);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string str=MySQLtest.ConnectionTest();
+            LabelTest.LabelRed(GBK2HEX_Result, str);
         }
     }
 }

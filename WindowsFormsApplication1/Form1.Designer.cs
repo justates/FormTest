@@ -40,6 +40,7 @@
             this.HEXResult = new System.Windows.Forms.TextBox();
             this.GBKOri = new System.Windows.Forms.TextBox();
             this.GBK2HEXBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -153,11 +154,22 @@
             this.GBK2HEXBtn.UseVisualStyleBackColor = true;
             this.GBK2HEXBtn.Click += new System.EventHandler(this.GBK2HEXBtn_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(290, 298);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(68, 30);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "DBTest";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 408);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.GBK2HEX_Result);
             this.Controls.Add(this.HEXResult);
             this.Controls.Add(this.GBKOri);
@@ -190,6 +202,7 @@
         private System.Windows.Forms.TextBox HEXResult;
         private System.Windows.Forms.TextBox GBKOri;
         private System.Windows.Forms.Button GBK2HEXBtn;
+        private System.Windows.Forms.Button button2;
     }
 }
 
