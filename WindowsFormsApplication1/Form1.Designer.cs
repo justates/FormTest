@@ -41,6 +41,9 @@
             this.GBKOri = new System.Windows.Forms.TextBox();
             this.GBK2HEXBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.DBResult = new System.Windows.Forms.Label();
+            this.DBOutput = new System.Windows.Forms.TextBox();
+            this.DBInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -164,11 +167,41 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // DBResult
+            // 
+            this.DBResult.AutoSize = true;
+            this.DBResult.Location = new System.Drawing.Point(572, 307);
+            this.DBResult.Name = "DBResult";
+            this.DBResult.Size = new System.Drawing.Size(41, 12);
+            this.DBResult.TabIndex = 16;
+            this.DBResult.Text = "label1";
+            this.DBResult.Visible = false;
+            // 
+            // DBOutput
+            // 
+            this.DBOutput.Location = new System.Drawing.Point(385, 304);
+            this.DBOutput.Name = "DBOutput";
+            this.DBOutput.Size = new System.Drawing.Size(168, 21);
+            this.DBOutput.TabIndex = 15;
+            // 
+            // DBInput
+            // 
+            this.DBInput.BackColor = System.Drawing.Color.White;
+            this.DBInput.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DBInput.Location = new System.Drawing.Point(52, 304);
+            this.DBInput.MaxLength = 24;
+            this.DBInput.Name = "DBInput";
+            this.DBInput.Size = new System.Drawing.Size(187, 21);
+            this.DBInput.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 408);
+            this.Controls.Add(this.DBResult);
+            this.Controls.Add(this.DBOutput);
+            this.Controls.Add(this.DBInput);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.GBK2HEX_Result);
             this.Controls.Add(this.HEXResult);
@@ -203,6 +236,9 @@
         private System.Windows.Forms.TextBox GBKOri;
         private System.Windows.Forms.Button GBK2HEXBtn;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label DBResult;
+        private System.Windows.Forms.TextBox DBOutput;
+        private System.Windows.Forms.TextBox DBInput;
     }
 }
 
